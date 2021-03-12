@@ -7,7 +7,7 @@ const argv = require('yargs')
   })
   .check((argv, options) => {
     if (isNaN(argv.base)) {
-      throw 'La base debe ser un numero'
+      throw 'La base debe ser un número'
     }
     return true
   })
@@ -20,12 +20,12 @@ const argv = require('yargs')
   .options('h', {
     alias: 'hasta',
     type: 'number',
-    describe: 'Limite maximo de la tabla',
+    describe: 'Limite máximo de la tabla',
     demandOption: true
   })
   .check((argv, options) => {
     if (isNaN(argv.h)) {
-      throw 'El limite debe ser un numero'
+      throw 'El limite debe ser un número'
     }
     return true
   })
